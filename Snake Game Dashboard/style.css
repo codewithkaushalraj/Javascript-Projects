@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main {
+   height: 90%;
+  width: 40%;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.board{
+  height: 100%;
+  width: 100%;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+}
+button{
+  padding: 10px 50px;
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  font-weight: 800;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+.box{
+  height: 60px;
+  width:60px;
+  background-color: red;
+  position: absolute;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+.timer{
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+#overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.836);
+  font-size: 10vmax;
+  text-transform: uppercase;
+  display: none;
+  font-weight: 800;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:900px){
+
+    main{
+        width:95vw;
+        height:95vh;
+    }
+
+    .box{
+        width:55px;
+    }
+
+    button{
+        width:100%;
+        max-width:320px;
+    }
+  #overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.836);
+  font-size: 7vmax;
+  text-transform: uppercase;
+  display: none;
+  font-weight: 800;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:600px){
+
+    main{
+        gap:1rem;
+    }
+
+    .timer{
+        flex-direction:column;
+        gap:0.5rem;
+        text-align:center;
+        font-size:20px;
+    }
+
+    .box{
+        width:45px;
+    }
+
+    button{
+        width:100%;
+        padding:14px;
+        font-size:20px;
+    }
+   #overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.836);
+  font-size: 4vmax;
+  text-transform: uppercase;
+  display: none;
+  font-weight: 800;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+}
