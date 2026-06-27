@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+}
+.entry{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+
+}
+#city{
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button{
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+    width: 80px;
+    position: relative;
+    top: 9px;
+    font-size: 16px;
+    text-align: center;
+   
+}
+.search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+#result{
+    margin-top: 20px;
+}
+#result div{
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+
+}
+#result img{
+    width: 100px;
+    height: 100px;
+}
+#result img:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+#result div:hover{
+    color: #007BFF;
+}
+
