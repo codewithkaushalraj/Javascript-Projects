@@ -4,7 +4,8 @@ const cross = document.querySelector('.cross')
 const form = document.querySelector('form')
 const productsDiv = document.querySelector('#products')
 
-let ProductsArr = []
+let ProductsArr =JSON.parse(localStorage.getItem('products'))|| [];
+
 addProducts.addEventListener('click', () => {
     formDiv.style.display = "flex";
 })
@@ -29,6 +30,7 @@ let ui = () => {
             </div>`
     })
 }
+ui()
 let productIndex = null;
 let updateProducts = (Name) => {
     // console.log(Name)
@@ -44,6 +46,8 @@ let updateProducts = (Name) => {
 }
 let deleteProduct = (index) => {
     ProductsArr.splice(index,1);
+    localStorage.setItem('products',JSON.stringify(ProductsArr))
+
     ui()
 }
 
@@ -61,10 +65,13 @@ form.addEventListener('submit', (event) => {
     let obj = { ProductName, Description, Price, url }
     if (productIndex != null) {
         ProductsArr[productIndex] = obj;
+        localStorage.setItem('products',JSON.stringify(ProductsArr))
         productIndex = null   // Imporant step (otherwise on only all the changes will be perform only sigle element)
     }
     else{
         ProductsArr.push(obj)
+        localStorage.setItem('products',JSON.stringify(ProductsArr))
+
     } 
     //    console.log(ProductsArr)
     formDiv.style.display = "none";

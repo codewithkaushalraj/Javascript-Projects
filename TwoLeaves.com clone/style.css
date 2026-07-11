@@ -1,0 +1,758 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fbf9eb;
+  overflow-x: hidden;
+}
+body::selection {
+  background-color: rgb(255, 149, 0);
+  color: white;
+}
+main {
+  height: 100%;
+  width: 100%;
+}
+#section-1 {
+  height: 85%;
+  width: 100%;
+  background-image: url("./Images/img1.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#section-1 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 10px;
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  right: 20px;
+}
+#section-1 nav .left {
+  display: flex;
+  gap: 1rem;
+}
+#section-1 nav .left i {
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: rgba(2, 251, 255, 0.377);
+}
+#section-1 nav .left a:nth-child(3) i {
+  border: none;
+  background-color: transparent;
+}
+#section-1 .right {
+  display: flex;
+  gap: 1rem;
+}
+#section-1 a {
+  border: none;
+  color: black;
+  text-decoration: none;
+}
+#section-1 .btm {
+  width: 30%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+}
+#section-1 .btm h1 {
+  font-weight: 100;
+  font-size: 4rem;
+  /* text-transform: uppercase; */
+  font-family: serif;
+}
+#section-1 .btm button {
+  padding: 0.5rem 2rem;
+  background-color: darkblue;
+  color: white;
+  width: 50%;
+  border-radius: 30px;
+  border: 2px solid white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+#section2 {
+  height: 120%;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#section2 h1 {
+  width: 65%;
+  text-align: center;
+  font-weight: lighter;
+  font-family: serif;
+  font-size: 4rem;
+}
+#section2 > span {
+  text-transform: uppercase;
+  background-color: purple;
+  padding: 0.5rem 2rem;
+  color: white;
+  font-size: 2rem;
+  transform: rotate(-5deg);
+  border-radius: 1rem;
+}
+#section2 .center {
+  font-family: cursive;
+}
+#section2 .Products {
+  display: flex;
+  gap: 1rem;
+}
+#section2 .Products .card {
+  width: 350px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0.5rem;
+  border: 1px solid black;
+  background-color: rgba(128, 128, 128, 0.16);
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+#section2 .Products .card img {
+  width: 100%;
+  height: 60%;
+  background-color: rgba(84, 184, 84, 0.83);
+  border: 1px solid black;
+  border-radius: 20px;
+  overflow-y: hidden;
+}
+#section2 .Products .card img:hover {
+  transform: scale(1.1);
+}
+#section2 .Products .card h2 {
+  font-size: 22px;
+  font-weight: 100;
+}
+#section2 .Products .card .btm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+#section2 .Products .card .top {
+  padding: 0.5rem 1.3rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+}
+#section2 .Products .card .top span:nth-child(1) {
+  background-color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+#section2 button {
+  padding: 1rem 3rem;
+  background-color: rgba(0, 38, 91, 0.797);
+  color: white;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  border: 1px solid black;
+}
+#section3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#section3 .top {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#section3 .top span {
+  font-size: 4rem;
+  font-family: monospace;
+  font-weight: 900;
+  background-color: rgb(235, 130, 18);
+  width: fit-content;
+  transform: rotate(-3deg);
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+#section3 .top input {
+  width: 50%;
+  background-color: transparent;
+  font-size: 2rem;
+  padding: 1rem 3rem;
+  border: 2px solid grey;
+  border-radius: 10px;
+  color: rgba(128, 128, 128, 0.796);
+}
+#section3 .top p {
+  font-size: 4rem;
+  font-family: serif;
+  font-weight: 100;
+  /* text-transform: uppercase; */
+  color: rgba(0, 0, 0, 0.773);
+}
+#section3 .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+#section3 .row {
+  display: flex;
+  gap: 1rem;
+}
+#section3 button {
+  padding: 0.5rem 1rem;
+  background-color: rgba(170, 222, 255, 0.746);
+  font-family: serif;
+  font-size: 2rem;
+  border-radius: 20px;
+}
+#section3 button:hover {
+  background-color: rgba(37, 37, 179, 0.697);
+  color: white;
+}
+#section4 {
+  height: 150%;
+  width: 100%;
+  background-image: url("//www.twoleavestea.com/cdn/shop/files/adam-vradenburg-_gu7E90QChU-unsplash_1_1.webp?v=1771592855&width=2560");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+#section4 h2 {
+  font-size: 4rem;
+  font-family: monospace;
+  letter-spacing: -2px;
+  font-weight: 900;
+  background-color: skyblue;
+  border: 1px solid black;
+  padding: 0.5rem 1.5rem;
+  color: black;
+  border-radius: 30px;
+  transform: rotate(-3deg);
+  width: fit-content;
+}
+#section4 h1 {
+  font-size: 8rem;
+  letter-spacing: -10px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 7rem;
+}
+#section4 p {
+  font-size: 4rem;
+  font-family: serif;
+  text-align: center;
+  padding: 1rem 5rem;
+}
+#section4 .btm {
+  display: flex;
+  gap: 4rem;
+}
+#section4 .btm img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+#section4 button {
+  background-color: rgb(2, 58, 155);
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  border: 2px solid white;
+}
+#section5 {
+  height: 100%;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#section5>p{
+    font-size: 3rem;
+    width: 50%;
+    text-align: center;
+}
+#section5 .items {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: scroll;
+}
+#section5 .items .card {
+  background-color: rgb(129, 181, 129);
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+#section5 .items .card > p {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  font-family: serif;
+}
+#section5 .items .card img {
+  width: 30%;
+  height: 40%;
+}
+#section5 .items .card .btm {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 2rem;
+  background-color: rgba(85, 107, 248, 0.511);
+}
+#section5 .items .card button {
+  padding: 1rem;
+  border-radius: 30px;
+  font-size: 1.3rem;
+}
+#section5 > .items > .card > .btm > p {
+  width: 40%;
+}
+#section5 .items .card:nth-child(2),
+#section5 .items .card:nth-child(4) {
+  background-color: orange;
+}
+#section5 .items .card:nth-child(5) {
+  background-color: rgb(164, 92, 164);
+}
+#section6 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+#section6 img {
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+#section6 .right {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(43, 43, 99);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+#section6 .right p {
+  font-size: 5rem;
+  font-family: serif;
+  width: 60%;
+}
+#section6 .right button {
+  padding: 1rem 2rem;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 20px;
+}
+#section7 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(142, 76, 29);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#section7 h1 {
+  font-size: 5rem;
+  color: white;
+  padding-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}
+#section7 .box {
+  height: 70%;
+  width: 100%;
+  background-color: orange;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section7 .box .left img {
+  height: 100%;
+  width: 70%;
+}
+#section7 > .box > .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+#section7 > .box > .right > h2 {
+  font-size: 4rem;
+  background-color: chocolate;
+  width: fit-content;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  border-radius: 30px;
+  transform: rotate(-3deg);
+}
+#section7 > .box > .right > h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+#section7 > .box > .right > p {
+  font-size: 1.5rem;
+  width: 60%;
+}
+#section7 > .box > .right > button {
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  width: fit-content;
+}
+#section7 > .box > .right > button:hover {
+  background-color: blue;
+  color: white;
+}
+#section8 {
+  height: 100%;
+  width: 100%;
+  background-image: url("//www.twoleavestea.com/cdn/shop/files/Two_Leaves_Tea_Aug_25_Shoot-14x_SQ_1_d549e6bb-f1ad-4b36-a851-05e1af195a31.webp?v=1771593222&width=3200");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+#section8 .box {
+  height: 60%;
+  width: 20%;
+  background-color: rgb(235, 102, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+#section8 .box p {
+  font-size: 2rem;
+  width: 50%;
+  color: white;
+}
+#section8 .box button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  width: fit-content;
+}
+#section8 .box button:hover {
+  background-color: blue;
+  color: white;
+}
+#section9 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(107, 107, 218);
+  padding: 3rem 2rem;
+}
+#section9 .box {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(48, 14, 150);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem;
+  font-family: serif;
+  justify-self: 20px;
+}
+#section9 .box .footer h3 {
+  font-size: 2.4rem;
+}
+#section9 .box .footer ul {
+  padding-top: 1rem;
+  list-style-type: none;
+}
+#section9 .box .footer a {
+  text-decoration: none;
+  color: rgb(204, 196, 196);
+  font-size: 1.4rem;
+}
+/* --- Tablet Screens (Max-width: 1024px) --- */
+@media (max-width: 1024px) {
+  #section-1 .btm {
+    width: 60%;
+  }
+  #section8 .box {
+    width: 45%;
+  }
+
+  #section-1 .btm h1 {
+    font-size: 4.5rem;
+  }
+  #section2 h1,
+  #section3 .top span,
+  #section3 .top p,
+  #section4 p {
+    font-size: 3rem;
+  }
+  #section4 h1 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+  #section7 h1,
+  #section7 > .box > .right > h1 {
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+  }
+  #section9 .box {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* --- Mobile Landscape & Portrait (Max-width: 768px) --- */
+@media (max-width: 768px) {
+  /* Fix layout breaks & clipping */
+  #section-1,
+  #section2,
+  #section3,
+  #section4,
+  #section5,
+  #section6,
+  #section7,
+  #section8,
+  #section9 {
+    height: auto !important;
+    min-height: 100vh;
+    padding: 7rem 1.5rem 3rem 1.5rem !important; /* Space for fixed nav */
+  }
+
+  /* Fixed Navigation */
+  #section-1 nav {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 0.6rem;
+  }
+  #section-1 nav .left,
+  #section-1 nav .right {
+    gap: 0.5rem;
+  }
+  #section-1 .right {
+    display: none;
+  }
+  /* Page 1 Hero Fixes: Pushes text to the bottom and centers button */
+  #section-1 {
+    justify-content: flex-end; /* Shifts elements down to the bottom side */
+    gap: 2rem;
+  }
+  #section-1 .btm {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: auto; /* Extra force to push layout down */
+  }
+  #section-1 .btm h1 {
+    font-size: 3.2rem; /* Increased font size for Page 1 title */
+    line-height: 1.1;
+  }
+  #section-1 .btm button {
+    width: 80%;
+    max-width: 280px; /* Centers and limits width beautifully */
+    margin: 0 auto;
+    padding: 0.8rem 2rem;
+  }
+
+  #section2 h1 {
+    width: 100%;
+    font-size: 2.2rem;
+  }
+  #section2 .Products {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #section2 .Products .card {
+    width: 100%;
+    max-width: 350px;
+  }
+  #section2 .Products .card .top {
+    left: 0;
+  }
+
+  #section3 .top {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  #section3 .top input {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  #section3 .top span,
+  #section3 .top p {
+    font-size: 2rem;
+  }
+  #section3 .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #section3 button {
+    font-size: 1.3rem;
+  }
+
+  #section4 h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: -3px;
+  }
+  #section4 h2 {
+    font-size: 2rem;
+  }
+  #section4 p {
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+  #section4 .btm {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #section5>p{
+    font-size: 1rem;
+  }
+  #section6 {
+    flex-direction: column;
+  }
+  #section6 img,
+  #section6 .right {
+    width: 100%;
+    height: 50vh;
+  }
+  #section6 .right p {
+    font-size: 2.5rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  #section7 h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  #section7 .box {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  #section7 .box .left img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+  #section7 > .box > .right {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  #section7 > .box > .right > h1 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+  #section7 > .box > .right > h2 {
+    font-size: 1.8rem;
+  }
+  #section7 > .box > .right > p {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  #section8 {
+    justify-content: center;
+    align-items: center;
+  }
+  #section8 .box {
+    width: 100%;
+    height: auto;
+    gap: 1.5rem;
+  }
+  #section8 .box p {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  /* Footer */
+  #section9 .box {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2.5rem;
+  }
+}
+
+/* --- Small Mobile Phones (Max-width: 400px) --- */
+@media (max-width: 400px) {
+  #section-1 nav {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.5rem;
+  }
+  #section-1 .btm h1 {
+    font-size: 2.8rem;
+  } /* Scaled slightly for very narrow screens */
+  #section5 .items .card {
+    width: 280px;
+  }
+}
